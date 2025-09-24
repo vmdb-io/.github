@@ -46,36 +46,6 @@ VMDB is built on a set of powerful, composable `Ops` primitives. Each primitive 
 | <code style="color:#00ff88;">Ops Fluents</code> | Dynamic lookups and scheduled data importers that keep VMDB's configuration state synchronized with external sources of truth. | Provides context enrichment by pulling data from other systems (e.g., cloud provider APIs, internal databases) into `Ops Vertex` records. |
 | <code style="color:#00ff88;">Ops Credentials</code> | A secure, multi-tenant interface for managing secrets required for operational workflows and system integrations. | Securely manages secrets by integrating with external providers like HashiCorp Vault, acting as the control plane for access. |
 
----
-
-### ► Architecture
-
-VMDB's power stems from its unique **CQRS/ES (Command Query Responsibility Segregation / Event Sourcing)** architecture. Every change to the system is captured as an immutable event, creating a perfect, tamper-proof audit trail.
-
-This design provides two key advantages:
-1.  **Time-Travel Queries:** Instantly retrieve the exact state of any configuration at any point in history.
-2.  **Hyper-Scalability:** Reads and writes are independently scaled, ensuring high performance for both data ingestion and complex queries.
-
-```mermaid
-graph LR
-    subgraph "VMDB.io Platform"
-        subgraph "Write Path"
-            API[API/CLI/SDK] -- Command --> CommandHandler[Command Handler]
-            CommandHandler -- Emits Event --> EventStore[(Event Store)]
-        end
-        subgraph "Read Path"
-            EventStore -- Projects --> ReadModel[Read Model]
-            QueryAPI[Query API] -- Query --> ReadModel
-        end
-    end
-
-    style API fill:#1a1a1a,stroke:#00ff88,stroke-width:2px
-    style QueryAPI fill:#1a1a1a,stroke:#00ff88,stroke-width:2px
-    style CommandHandler fill:#1a1a1a,stroke:#00ff88,stroke-width:2px
-    style EventStore fill:#00ff88,stroke:#000,color:#000
-    style ReadModel fill:#1a1a1a,stroke:#00ff88,stroke-width:2px
-```
-
 
 ---
 
