@@ -1,12 +1,8 @@
-Of course. Here is a fresh take on the GitHub README for `vmdb.io`, incorporating your specific requirements for styling, tone, and feature focus.
-
-***
-
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/2sZzK5j.png">
     <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/2sZzK5j.png">
-    <img alt="VMDB.io Logo" src="https://i.imgur.com/2sZzK5j.png" width="300">
+    <img alt="VMDB.io Logo" src="logo.png" width="300">
   </picture>
 </div>
 
