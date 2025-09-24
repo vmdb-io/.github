@@ -1,9 +1,7 @@
-    ~![logo](logo.png)
-    
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/2sZzK5j.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/2sZzK5j.png">
+    <source media="(prefers-color-scheme: dark)" srcset="logo.png">
+    <source media="(prefers-color-scheme: light)" srcset="logo.png">
   </picture>
 </div>
 
