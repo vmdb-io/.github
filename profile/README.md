@@ -15,8 +15,6 @@
   <a href="#-contributing"><strong>Contributing</strong></a>
 </p>
 
-<script src="https://vmdb.statuspage.io/embed/script.js"></script>
-
 <p align="center">
   <a href="https://github.com/vmdb-io/vmdb/actions"><img src="https://img.shields.io/github/actions/workflow/status/vmdb-io/vmdb/ci.yml?branch=main&style=for-the-badge&logo=github&color=00ff88&labelColor=1a1a1a" alt="Build Status"></a>
   <a href="https://github.com/vmdb-io/vmdb/releases"><img src="https://img.shields.io/github/v/release/vmdb-io/vmdb?style=for-the-badge&color=00ff88&labelColor=1a1a1a" alt="Latest Release"></a>
@@ -26,7 +24,7 @@
 
 ---
 
-~[logo](logo.png)
+![logo](logo.png)
 
 ### ► What is VMDB.io?
 
