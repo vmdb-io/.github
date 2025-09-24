@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/2sZzK5j.png">
     <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/2sZzK5j.png">
-    <img alt="VMDB.io Logo" src="logo.png" width="300">
+    ~![logo](logo.png)
   </picture>
 </div>
 
