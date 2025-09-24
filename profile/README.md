@@ -58,12 +58,12 @@ This design provides two key advantages:
 
 ```mermaid
 graph LR
-    subgraph VMDB.io Platform
-        subgraph "Write Path (Commands)"
+    subgraph "VMDB.io Platform"
+        subgraph "Write Path"
             API[API/CLI/SDK] -- Command --> CommandHandler[Command Handler]
             CommandHandler -- Emits Event --> EventStore[(Event Store)]
         end
-        subgraph "Read Path (Queries)"
+        subgraph "Read Path"
             EventStore -- Projects --> ReadModel[Read Model]
             QueryAPI[Query API] -- Query --> ReadModel
         end
