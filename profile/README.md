@@ -24,6 +24,8 @@
 
 ---
 
+~[logo](logo.png)
+
 ### ► What is VMDB.io?
 
 **VMDB.io** is an active, real-time, event-driven AIOps platform designed for the complexity of modern cloud-native environments. It serves as the central nervous system for your cloud architecture, unifying configuration, automation, and operational intelligence into a single, cohesive system.
